@@ -23,12 +23,8 @@
           {%- elsif site.enable_navbar_social -%}
           <!-- Social Icons -->
           <div class="navbar-brand social">
-            {% include social.html %}
-          </div>
-          {% endif %}
-          {%- elsif site.enable_navbar_image -%}
-          <!-- Navbar Image -->
           <li><a class="navbar-brand image" href="{{ site.baseurl }}"><img class="navbar-image" src="assets/img/logo.png"/></a></li>
+          </div>
           {% endif %}
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
