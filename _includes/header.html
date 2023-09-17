@@ -46,6 +46,9 @@
               <!-- About -->
               <li class="nav-item">
                 <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
+                  {%- if page.permalink == '/' -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
                 </a>
               </li>
               {% if site.blog_nav_title %}
